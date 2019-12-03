@@ -1,2 +1,260 @@
 <!DOCTYPE html>
-<ht
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+    content="a game in HTML">
+    <title>Prison Escape!</title>
+        <link rel="stylesheet"
+        href="gaming.css">   
+    <img id="image-option" />
+	<p id="option-desc"></p>
+
+	<script src="options.js"></script>
+    </head>
+<body>
+<h1>opening</h1>
+    <p>You wake up on a bed in a dim, cold prison cell. You have no recollection of how you got here, but you feel sunk and confused, and need to get out of here. 
+        <li>get up</li>
+    </p>
+    
+<h1>room</h1>
+    <p>
+    There is a window on one wall, barred. On another wall, a toilet, and prison bars leading to a hallway. There's a light with some kind of object inside the shield, and a loose stone in the wall. What do you investigate?
+        <li>window</li>
+        <li>bed</li>
+        <li>toilet</li>
+        <li>bars</li>
+        <li>light</li>
+        <li>loose tile</li>
+    </p>
+    
+<h1>if window</h1>
+    <p>
+    Outside the window, you see children playing in a park not too far away (why did they put a park so close to a prison?? you think to yourself.) They look dirty and hungry. A broom is leaning against the wall. 
+        <li>talk to kids</li>
+        <li>use nail file</li>
+        <li>back to room</li>
+    </p>
+    
+    <h1>if kids</h1>
+        <p>
+        You ask the children to give you the broom. They will not help you unless you offer them something. 
+            <li>give soap</li>
+            <li>give food</li>
+            <li>back to room</li>
+        </p>
+    
+        <h1>if soap</h1>
+            <p>you got the broom!
+                <li>back to room</li>
+            </p>
+    
+        <h1>if food</h1>
+            <p>you got the broom!
+                <li>back to room</li>
+            </p>
+    
+    <h1>if nail file</h1>
+        <p>you file the bars away, and attempt to jump out of the window, but you fall and break your legs! YOU LOSE
+            <li>back to start</li>
+        </p>
+    
+<h1>if bed</h1>
+    <p>
+    On the bed, there is a pillow and a blanket.
+        <li>look in blanket</li>
+        <li>take pillow</li>
+        <li>back to room</li>
+    </p>
+    
+    <h1>if blanket</h1>
+        <p>
+        You found a bottle of pills!
+            <li>back to room</li>
+    </p>
+    
+    <h1>if pillow</h1>
+        <p> you have the pillow!
+            <li>back to room</li>
+    </p>
+    
+<h1>if toilet</h1>
+    <p>
+    There's a bar of soap on top of the toilet tank, and checking inside the tank you see a nail file. Maybe if you clogged the toilet, you could get it!
+        <li>take soap</li>
+        <li>use pillow</li>
+        <li>back to room</li>
+    </p>
+    
+        <h1>if soap</h1>
+            <p>you now have soap!
+                <li>back to room</li>
+    </p>
+    
+        <h1>if pillow</h1>
+            <p>you clogged the toilet with the pillow, and now you have the nailfile!
+                <li>back to room</li>
+    </p>
+
+<h1>if bars</h1>
+    <p>
+        there's a plate of food on the floor in front of the cell door, and a guard dog sitting outside your cell, a key around its neck.
+            <li>take food</li>
+            <li>call dog</li>
+            <li>use key</li>
+            <li>back to room</li>
+    </p>
+    
+    <h1>if food</h1>
+        <p> you now have a chicken leg!
+            <li>back to room</li>
+        </p>
+    
+    <h1>if key</h1>
+        <p>oh no! the key didn't work on the lock; try something else!</p>
+    
+    <h1>if dog</h1>
+        <p>the dog looks at you and tilts his head. You'll need to give him something to get the key around his neck.
+            <li>give food</li>
+            <li>give pills</li>
+            <li>reach for key</li>
+            <li>back to room</li>
+        </p>
+        
+        <h1>if food</h1>
+            <p>you now have the key!
+                <li>back to room</li>
+            </p>
+    
+        <h1>if pills</h1>
+            <p>you now have the key!
+                <li>back to room</li>
+            </p>
+    
+        <h1>if reach</h1>
+            <p>Oh no! The dog bit off your hand! YOU LOSE
+                <li>Back to Start</li>
+            </p>
+    
+<h1>if light</h1>
+    <p> There seems to be a long object in the ceiling tile, if you had a long rod, you could probably knock it out.
+        <li>use broom</li>
+        <li>back to room</li>
+    </p>
+    
+    <h1>if broom</h1>
+        <p>you now have a crowbar!
+            <li>back to room</li>
+        </p>
+    
+<h1>if loose tile</h1>
+    <p>The tile on floor is loose, but you can't get it off on your own. You're going to need a tool.
+        <li>use crowbar</li>
+        <li>back to room</li>
+    </p>
+    <h1>if crowbar</h1>
+        <p>There's a tunnel under this stone! but, there's a burst pipe with water rushing out of it. what are you going to use to plug it?
+            <li>the pill bottle</li>
+            <li>the soap</li>
+        </p>
+    
+            <h1>if pills</h1>
+                <p>oh no! the pill bottle is too big to fit in the crack in the pipe! the water fills up the room and you drown! YOU LOSE
+                    <li>back to start</li>
+                </p>
+    
+            <h1>if soap</h1>
+                <p>the soap was able to plug the pipe! you escape out of the tunnel! YOU WIN
+                    <li>back to start</li>
+                </p>
+    </body>
+</html>
+
+<h1>Main Screen</h1>
+
+    <!doctype html>
+
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+
+    <title>Prison Escape!</title>
+
+    <link rel="stylesheet" href="stylesheet.css?v=1.0">
+
+        </head>
+
+        <body>
+            <div class="center"><img src="okboomer.png">
+                <p>
+                    Hello world</p>
+                <a class="option" href="okboomer.png">Click this for thing</a>
+        <a class="option" href="titlescreen.html">Click this for other thing</a></div>
+        </body>
+    </html>
+
+<h1>Title Screen</h1>
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Prison Escape!</title>
+
+  <link rel="stylesheet" href="css/stylesheet.css?v=1.0">
+
+</head>
+
+<body>
+  <div id="titlescreen">
+    <h1> Prison Escape! </h1>
+    </div>
+</body>
+</html>
+
+<H1>you lose</H1>
+    
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Prison Escape!</title>
+
+  <link rel="stylesheet" href="stylesheet.css?v=1.0">
+
+</head>
+
+<body>
+<div class="center middle">
+<p>Hello world</p>
+<h1> You lose!</h1>
+    </div>
+</body>
+</html>
+
+<h1>you win</h1>
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Prison Escape!</title>
+
+  <link rel="stylesheet" href="stylesheet.css?v=1.0">
+
+</head>
+
+<body>
+<div class="center middle">
+<p>Hello world</p>
+<h1> You win!</h1>
+    </div>
+</body>
+</html>
